@@ -15,18 +15,28 @@ This was built to allow quick shuffling between search directories. It is useful
 
 ![Find in Files example](https://f.cloud.github.com/assets/902488/860977/39331c12-f5c2-11e2-9de7-9769e885d111.png)
 
+
 ## Installation
-`Find++` is available via [Package Control][pkg-ctrl] and can be found as `Find++`.
 
-[pkg-ctrl]: http://wbond.net/sublime_packages/package_control
+### By Package Control
 
-For manual installation, run the following script in the Sublime Text terminal (``ctrl+` ``) which utilizes `git clone`.
+1. Download & Install `Sublime Text 3` (https://www.sublimetext.com/3)
+1. Go to the menu `Tools -> Install Package Control`, then,
+   wait few seconds until the `Package Control` installation finishes
+1. Go to the menu `Preferences -> Package Control`
+1. Type `Package Control Add Channel` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, input the following address and press <kbd>Enter</kbd>
+   ```
+   https://raw.githubusercontent.com/evandrocoan/StudioChannel/master/channel.json
+   ```
+1. Now, go again to the menu `Preferences -> Package Control`
+1. This time type `Package Control Install Package` on the opened quick panel and press <kbd>Enter</kbd>
+1. Then, search for `Find++` and press <kbd>Enter</kbd>
 
-```python
-import os; path=sublime.packages_path(); (os.makedirs(path) if not os.path.exists(path) else None); window.run_command('exec', {'cmd': ['git', 'clone', 'https://github.com/twolfson/FindPlusPlus', 'Find++'], 'working_dir': path})
-```
+See also:
+1. [ITE - Integrated Toolset Environment](https://github.com/evandrocoan/ITE)
+1. [Package control docs](https://packagecontrol.io/docs/usage) for details.
 
-Packages can be uninstalled via `Package Control: Remove Package`, located in the Command Palette.
 
 ## Documentation
 All commands are accessible via the Command Palette, `Ctrl + Shift + P` on Windows/Linux, `Command + Shift + P` on Mac.
